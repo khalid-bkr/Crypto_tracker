@@ -2,6 +2,7 @@ import axios from "axios";
 import { Fragment, useEffect, useState } from "react";
 import "./App.css";
 import Coin from "./Coin";
+import "./Coin.css";
 
 function App() {
   const [coins, setCoins] = useState([]);
@@ -52,7 +53,6 @@ function App() {
               priceChange={coin.price_change_percentage_24h}
               volume={coin.total_volume}
             />
-            ;
           </Fragment>
         );
       })}
